@@ -5,14 +5,29 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
-    "build": "webpack --mode=production --config ./build/webpack.config.js"
+    "build": "webpack --mode=production --config ./build/webpack.config.js",
+    "lint": "eslint src --ext .js,.ts",
+    "test": "jest"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
     "typescript": "^4.0.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jquery": "^3.5.1",
+    "@types/node": "^14.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.9.0",
     "html-webpack-plugin": "^4.4.1",
+    "jest": "^26.4.2",
+    "moment": "^2.28.0",
+    "ts-jest": "^26.3.0",
     "ts-loader": "^8.0.4",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
